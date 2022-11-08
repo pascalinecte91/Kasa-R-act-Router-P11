@@ -1,12 +1,15 @@
 import React from 'react';
 import Navigation from "../components/Navigation";
-import "../scss/index.scss";
+import Logo from './../components/Logo';
+
 
 const About = () => {
     return (
         <div>
-            <h1>A propos</h1>
-        </div>
+        <Logo/>
+        
+            <h2>A propos</h2>
+            </div> 
     );
 };
 

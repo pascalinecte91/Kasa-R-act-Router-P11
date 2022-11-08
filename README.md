@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-![logo](./src/assets/logo_kasa.png)
+![logo](./public/logo_kasa.png)
 
 ## Objective
 
