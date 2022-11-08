@@ -1,9 +1,10 @@
 import React from 'react';
-import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom";
+import "../scss/index.scss";
 
 const Navigation = () => {
     return (
-        <div className="navigation">
+        <header className="navigation">
             <ul>
         <NavLink to="/">
             <li>Accueil</li>
@@ -12,7 +13,7 @@ const Navigation = () => {
             <li>A Propos</li>
             </NavLink>
             </ul>    
-        </div>
+        </header>
     );
 };
 

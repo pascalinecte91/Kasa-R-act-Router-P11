@@ -1,21 +1,18 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import About from "./pages/About";
-import Home from "./pages/Home";
-import NotFoundPage from "./pages/NotFoundPage";
+import Router from "./route/Router";
+import Footer from './components/Footer';
+import Navigation from './components/Navigation';
 
-const App = () => {
+function App() {
     return (
         <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} /> 
-                <Route path="/404" element={<NotFoundPage />} />
-                {/* le chemin avec * url qui ne correspond à rien de declaré au dessus */}
-                <Route path="*" element={<Home />} />
-            </Routes>
+            <Navigation />
+            <main className="main">
+                <Router />
+            </main>
+            <Footer />
         </BrowserRouter>
     );
-};
-
+}
 export default App;
