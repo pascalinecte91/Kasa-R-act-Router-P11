@@ -1,9 +1,8 @@
-
-
 .navigation {
     display: flex;
     justify-content: space-between;
     margin-top: 1.8rem;
+
     ul {
         display: flex;
         justify-content: flex-end;
@@ -12,13 +11,15 @@
 
         a {
             text-decoration: none;
-            padding: 20px;
+            padding: 5px;
+            width: auto;
 
             li {
                 display: flex;
                 justify-content: flex-end;
                 font-size: 24px;
-                font-family:" montserrat";
+                font-family: " montserrat";
+                width: 90px;
                 font-weight: 500;
                 list-style: none;
                 color: $color-1;
@@ -30,21 +31,24 @@
                     width: 90px;
                 }
             }
+
             .menu-home {
                 width: 136px;
                 text-align: right;
                 margin-right: 10px;
             }
+
             .menu-about {
                 width: 116px;
             }
+
             .img {
                 display: flex;
-              justify-content: flex-start;
+                justify-content: flex-start;
                 margin-top: 30px;
             }
         }
-
+//*barre en dessous de la nav
         .nav-active {
             position: relative;
 

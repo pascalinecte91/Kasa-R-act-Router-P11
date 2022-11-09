@@ -3,13 +3,17 @@ import Header from "../components/Header";
 import Card from "./../components/Card";
 import Footer from "./../components/Footer";
 import { NavLink } from "react-router-dom";
+import Banner from "./../components/Banner";
+import Loader from './../components/Loader';
+
 
 const Home = () => {
     return (
-        <div>
+        <main>
             <NavLink />
-            <h1>Home</h1>
-        </div>
+            <Banner />
+            <Loader />
+        </main>
     );
 };
 

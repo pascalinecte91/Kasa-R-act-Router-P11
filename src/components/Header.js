@@ -6,18 +6,16 @@ import "../styles/index.scss";
 const Header = () => {
     return (
         <header className="navigation">
-                <img class="navLog" src="./logo_kasa.svg" alt="" />
+                <img className="navLog" src="./logo_kasa.svg" alt="" />
             <ul>
                 <NavLink
                     to="/"
-                    className={(nav) => (nav.isActive ? "nav-active" : "")}
-                >
+                    className={(nav) => (nav.isActive ? "nav-active" : "")}end>
                     <li className="menu-home">Accueil</li>
                 </NavLink>
                 <NavLink
                     to="/about"
-                    className={(nav) => (nav.isActive ? "nav-active" : "")}
-                >
+                    className={(nav) => (nav.isActive ? "nav-active" : "")}end>
                     <li className="menu-about">A propos</li>
                 </NavLink>
             </ul>

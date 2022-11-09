@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from "../components/Header";
 import { NavLink } from 'react-router-dom';
-
+import Banner from "../components/Banner";
 
 
 const About = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Sheet = () => {
+const Description = () => {
     return (
         <div>
             <p>
@@ -11,4 +11,4 @@ const Sheet = () => {
     );
 };
 
-export default Sheet;
+export default Description;
