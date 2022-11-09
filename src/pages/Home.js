@@ -1,13 +1,13 @@
 import React from "react";
-import Navigation from "../components/Navigation";
+import Header from "../components/Header";
 import Card from './../components/Card';
 import Footer from './../components/Footer';
-import Logo from './../components/Logo';
+import { NavLink } from 'react-router-dom';
 
 const Home = () => {
     return (
         <div>
-        <Logo/>
+        <NavLink/>
         
             <h1>Home</h1>
             </div>

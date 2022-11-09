@@ -1,12 +1,13 @@
 import React from 'react';
-import Navigation from "../components/Navigation";
-import Logo from './../components/Logo';
+import Header from "../components/Header";
+import { NavLink } from 'react-router-dom';
+
 
 
 const About = () => {
     return (
         <div>
-        <Logo/>
+        <NavLink/>
         
             <h2>A propos</h2>
             </div> 

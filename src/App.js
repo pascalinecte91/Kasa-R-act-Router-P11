@@ -2,12 +2,12 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Router from "./route/Router";
 import Footer from './components/Footer';
-import Navigation from './components/Navigation';
+import Header from './components/Header';
 
 function App() {
     return (
         <BrowserRouter>
-            <Navigation />
+            <Header />
             <main className="main">
                 <Router />
             </main>

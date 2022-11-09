@@ -1,16 +1,25 @@
+
+
 .navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.8rem;
     ul {
         display: flex;
         justify-content: flex-end;
-        margin: 30px;
+        margin: 30px 40px 0px 0px;
+        align-items: flex-end;
 
         a {
             text-decoration: none;
-            padding: 10px;
+            padding: 20px;
 
             li {
-                width: 136px;
+                display: flex;
+                justify-content: flex-end;
                 font-size: 24px;
+                font-family:" montserrat";
+                font-weight: 500;
                 list-style: none;
                 color: $color-1;
                 transition: 0.2s;
@@ -18,7 +27,21 @@
 
                 &:hover {
                     color: $color-1;
+                    width: 90px;
                 }
+            }
+            .menu-home {
+                width: 136px;
+                text-align: right;
+                margin-right: 10px;
+            }
+            .menu-about {
+                width: 116px;
+            }
+            .img {
+                display: flex;
+              justify-content: flex-start;
+                margin-top: 30px;
             }
         }
 
@@ -28,19 +51,20 @@
             &::after {
                 content: "";
                 height: 2px;
-                width: 0;
+                width: min-content;
                 background: $color-1;
                 position: absolute;
                 border-radius: 10px;
                 bottom: 0px;
                 left: 50%;
+                width: 0;
                 transform: translateX(-50%);
                 -webkit-animation: anim 0.3s ease forwards;
                 animation: anim 0.6s ease forwards;
 
                 @-webkit-keyframes anim {
                     to {
-                        width: 100%;
+                        width: 90%;
                     }
                 }
 
