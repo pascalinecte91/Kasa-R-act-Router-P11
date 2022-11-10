@@ -1,5 +1,42 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
 $color-1: #FF6060;
 $color-2: #e3e3e3;
 
+//** @mixin  FLEXBOX
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@mixin flex-start {
+    display: flex;
+    justify-content: flex-start;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+//******  WIDTH  &  HEIGHT
+
+@mixin wh($width, $height) {
+    width: $width;
+    height: $height;
+}

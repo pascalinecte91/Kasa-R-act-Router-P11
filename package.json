@@ -1,4 +1,5 @@
 {
+  "homepage": "https://pascalinecte91.github.io/Kasa-React-Router-P11",
   "name": "kasa-react-router",
   "version": "0.1.0",
   "private": true,
@@ -18,7 +19,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass": "sass --watch ./src/styles/index.scss:./src/style/style.css"
+    "sass": "sass --watch ./src/styles/index.scss:./public/css/style.css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -31,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }

@@ -1,25 +1,31 @@
-.navigation {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1.8rem;
+header{
+    width: calc(100% - 200px);
+        @include flex-between;
+        margin-top: 1.8rem;
+        margin-top: 30px;
+        align-items: center;
+        margin-left: 100px;
 
+    &_logo {
+width: 210px;
+height: 68px;
+    }
+    
     ul {
-        display: flex;
-        justify-content: flex-end;
+        @include flex-end;
         margin: 30px 40px 0px 0px;
         align-items: flex-end;
 
         a {
             text-decoration: none;
             padding: 5px;
-            width: auto;
+            width: 120px;
 
             li {
-                display: flex;
-                justify-content: flex-end;
+                @include flex-end;
                 font-size: 24px;
                 font-family: " montserrat";
-                width: 90px;
+                width: 120px;
                 font-weight: 500;
                 list-style: none;
                 color: $color-1;
@@ -28,27 +34,22 @@
 
                 &:hover {
                     color: $color-1;
-                    width: 90px;
                 }
             }
 
-            .menu-home {
+            .nav-home {
                 width: 136px;
                 text-align: right;
                 margin-right: 10px;
             }
 
-            .menu-about {
-                width: 116px;
+            .nav-about {
+                width: 146px;
             }
 
-            .img {
-                display: flex;
-                justify-content: flex-start;
-                margin-top: 30px;
-            }
         }
-//*barre en dessous de la nav
+
+        //*barre en dessous de la nav
         .nav-active {
             position: relative;
 
@@ -60,9 +61,9 @@
                 position: absolute;
                 border-radius: 10px;
                 bottom: 0px;
-                left: 50%;
+                left: 80%;
                 width: 0;
-                transform: translateX(-50%);
+                transform: translateX(-42%);
                 -webkit-animation: anim 0.3s ease forwards;
                 animation: anim 0.6s ease forwards;
 
@@ -78,6 +79,30 @@
                     }
                 }
             }
+        }
+    }
+}
+
+//*****   RESPONSIVE  ********
+@media screen and (max-width: 768px) {
+    nav.logo {
+        &_logo {
+            width: 160px;
+            height: 80px;
+        }
+        &_li {
+            text-transform: uppercase;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .header {
+        &_li {
+            font-size: 10px;
+            margin-left: 5px;
         }
     }
 }

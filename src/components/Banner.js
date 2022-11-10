@@ -1,15 +1,16 @@
 import React from "react";
 
+import "styles/index.scss";
 
-import "../styles/index.scss";
 
-
-const Banner = () => {
+const Banner = ({ bannerHome, text }) => {
     return (
-    <div className="banner">
-        <img src="./home_banner.jpg" alt="banner" className="home_banner" />
-    </div>
+        <div className="banner">
+            <img className="banner_image" src={bannerHome}></img>
+            <div className="banner_text">{text}</div>
+        </div>
     );
 };
 
 export default Banner;
+
