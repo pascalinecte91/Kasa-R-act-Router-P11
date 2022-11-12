@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/Kasa-React-Router-P11/static/css/main.e6c55a77.css",
-    "main.js": "/Kasa-React-Router-P11/static/js/main.ddd3737c.js",
+    "main.css": "/Kasa-React-Router-P11/static/css/main.1b794a84.css",
+    "main.js": "/Kasa-React-Router-P11/static/js/main.d0dfe6d7.js",
+    "static/media/aboutBanner.jpg": "/Kasa-React-Router-P11/static/media/aboutBanner.e8cc81c1db153c8dac8c.jpg",
     "static/media/homeBanner.jpg": "/Kasa-React-Router-P11/static/media/homeBanner.179d25c559cef3a48996.jpg",
     "index.html": "/Kasa-React-Router-P11/index.html",
-    "main.e6c55a77.css.map": "/Kasa-React-Router-P11/static/css/main.e6c55a77.css.map",
-    "main.ddd3737c.js.map": "/Kasa-React-Router-P11/static/js/main.ddd3737c.js.map"
+    "main.1b794a84.css.map": "/Kasa-React-Router-P11/static/css/main.1b794a84.css.map",
+    "main.d0dfe6d7.js.map": "/Kasa-React-Router-P11/static/js/main.d0dfe6d7.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c55a77.css",
-    "static/js/main.ddd3737c.js"
+    "static/css/main.1b794a84.css",
+    "static/js/main.d0dfe6d7.js"
   ]
 }
