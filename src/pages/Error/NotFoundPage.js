@@ -1,16 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const NotFoundPage = () => {
     return (
-        <>
-            <h2 className="notFoundEn">Error HTTP 404 - </h2>
-            <p className="error">Page Not Found </p>
+        <div className="notFound">
+            <p className="error404">404</p>
+            <p className="error">Oups ! La page que vous demandez n'existe pas </p>
 
-            <Link to="/">
-                <b> Back Home Page</b>
-                </Link>
-        </>
+            <NavLink to="/">
+                <b> Retourner sur la page d'accueil</b>
+                </NavLink>
+        </div>
     );
 };
 

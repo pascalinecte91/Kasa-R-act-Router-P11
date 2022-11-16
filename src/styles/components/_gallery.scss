@@ -12,14 +12,25 @@
     margin-bottom: 40px;
     background-color: #f6f6f6;
     border-radius: 20px;
-}
 
-@media screen and (max-width: 768px) {
-    .gallery {
-        gap: 20px;
-        padding: 0px;
-        background-color: white;
-        margin-top: 20px;
-        margin-bottom: 20px;
+    @media (min-width: 1024px) and (max-width :1440px) {
+        width: 87%;
+    } 
+
+    @media (min-width: 768px) and (max-width  : 1023.99px) {
+        width: 81%;
+        gap: 40px;
+    } 
+
+    @media (min-width: 424.99px) and (max-width: 767.99px) {
+        width: 75%;
+    }
+
+    @media (max-width: 425px)  {
+        width: 150%;
+        margin-right :10px;
+        margin-left: 10px;
+        gap: 30px;
+
     }
 }

@@ -1,0 +1,55 @@
+.notFound {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.error404 {
+    font-size: 288px;
+    font-weight: 700;
+    color: #FF6060;
+    margin: 0;
+}
+
+.error {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 142.6%;
+    color: #FF6060;
+    margin: 100px 0 100px;
+    font-weight: 500;
+}
+
+b {
+    text-decoration: underline;
+    color: #FF6060;
+}
+
+
+@media screen and (min-width: 768px) {}
+
+/* @media screen and (min-width: 1200px){
+    .error{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .error h1{
+        font-size: 288px;
+    }
+
+    .error h2{
+        font-size: 36px;
+    }
+
+    .error a{
+        font-size: 18px;
+    } */
