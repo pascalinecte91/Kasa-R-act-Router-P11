@@ -1,6 +1,6 @@
 import React from "react";
 
-const Rent= () => {
+const FicheLocation= () => {
     return (
         <>
             <p>
@@ -11,4 +11,4 @@ const Rent= () => {
     );
 };
 
-export default Rent;
+export default FicheLocation;

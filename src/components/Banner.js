@@ -4,6 +4,7 @@ import "styles/index.scss";
 
 
 const Banner = ({ bannerHome, text }) => {
+
     return (
         <div className="banner">
             <img className="banner_image" src={bannerHome}></img>

@@ -1,24 +1,21 @@
 import React from "react";
-import Card from "components/Card";
 import { NavLink } from "react-router-dom";
-import Loader from 'components/Loader';
-import Footer from 'components/Footer';
-import Header from 'components/Header';
-import Banner from 'components/Banner';
-import homeBanner from 'assets/homeBanner.jpg';
-
-
+import Loader from "components/Loader";
+import Banner from "components/Banner";
+import homeBanner from "assets/homeBanner.jpg";
+import Gallery from "components/Gallery";
 
 const Home = () => {
     return (
-        <React.Fragment>
-        <main>
-            <NavLink />
-            <Banner bannerHome= {homeBanner} text=" Chez vous, Partout et Ailleurs " />
-            <Loader />
-        </main>
-        </React.Fragment >
+        <>
+            <main>
+                <Loader />
+                <Banner bannerHome={homeBanner} text=" Chez vous, Partout et Ailleurs "/>
+                <Gallery />
+            </main>
+        </>
     );
 };
 
 export default Home;
+

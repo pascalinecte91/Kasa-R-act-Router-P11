@@ -1,0 +1,25 @@
+.gallery {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+    gap: 50px;
+    padding: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #f6f6f6;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .gallery {
+        gap: 20px;
+        padding: 0px;
+        background-color: white;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
