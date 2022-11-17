@@ -11,9 +11,8 @@ const Header = () => {
             <ul>
                 <NavLink
                     to="/"
-                    className={(nav) => (nav.isActive ? "nav-active" : "")}
-                    end>
-                        {/*  end permet d'eviter les beugs sur le 1er link et empecher la propagation du isActive à son voisin  */}
+                    className={(nav) => (nav.isActive ? "nav-active" : "")}end>
+                    {/*  end permet d'eviter les beugs sur le 1er link et empecher la propagation du isActive à son voisin  */}
                     <li className="nav-home">Accueil</li>
                 </NavLink>
                 <NavLink

@@ -6,13 +6,13 @@ import Header from './components/Header';
 
 function App() {
     return (
-        <BrowserRouter>
+        <>
             <Header />
             <main className="main">
                 <Router />
             </main>
             <Footer />
-        </BrowserRouter>
+        </>
     );
 }
 export default App;

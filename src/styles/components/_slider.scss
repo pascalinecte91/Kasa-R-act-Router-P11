@@ -1,0 +1,82 @@
+.slider {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+    mix-blend-mode: normal;
+
+    // Lightbox Image
+    &_picture {
+        width: calc(100% - 100px);
+        height: 415px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        border-radius: 25px;
+        margin-left:10px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    &_number {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        text-shadow: black 1px 1px;
+    
+    }
+ 
+    &_left{
+        width:46px;
+        height: 79px; 
+        cursor: pointer; 
+        position: relative;
+        left: 6%;
+        color:white;
+    }
+
+    &_right{
+        width:46px;
+        height: 79px; 
+        cursor: pointer;
+        position: relative;
+        right: 6%; 
+    }
+    @keyframes monSlide {
+        0% {
+            left: 0px;
+        }
+        100% {
+            left: -1800px;
+        }
+    }
+}
+/**************** Responsive ****************/
+@media screen and (max-width: 768px) {
+    .slider {
+        &__picture {
+            height: 30vh;
+            border-radius: 10px;
+            min-width: 320px;
+        }
+
+        &__number {
+            display: none;
+        }
+
+    /*     .chevron {
+            @include wh(20px, 30px);
+        } */
+
+        .left {
+            left: 10px;
+        }
+
+        .right {
+            right: 10px;
+        }
+    }
+}

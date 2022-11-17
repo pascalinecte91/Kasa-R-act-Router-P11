@@ -7,9 +7,12 @@ const Gallery = () => {
     return (
         <section className="gallery">
             {data.map((rent) => (
-                <Card key={rent.id} id={rent.id} picture={rent.cover}
-                    title={rent.title}>
-                </Card>
+                <Card
+                    key={rent.id}
+                    id={rent.id}
+                    picture={rent.cover}
+                    title={rent.title}
+                ></Card>
             ))}
         </section>
     );
