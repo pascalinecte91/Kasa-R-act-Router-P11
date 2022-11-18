@@ -2,81 +2,77 @@
     display: flex;
     align-items: center;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
     mix-blend-mode: normal;
 
-    // Lightbox Image
     &_picture {
-        width: calc(100% - 100px);
-        height: 415px;
+        width: calc(100% - 9.25rem);
+        height: 25.9375rem;
         -o-object-fit: cover;
         object-fit: cover;
         border-radius: 25px;
-        margin-left:10px;
+        margin: auto;
         display: flex;
         justify-content: center;
-    }
 
+        @media (min-width: 767.99px) and (max-width :1024px) {
+            width: calc(100% - 5.3125rem);
+            justify-content: space-around;
+        }
+
+        @media (min-width: 374.99px) and (max-width :768px) {
+            justify-content: space-around;
+        }
+    }
 
     &_number {
         position: absolute;
-        bottom: 30px;
+        bottom: 1.875rem;
         left: 50%;
         color: white;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 500;
         text-shadow: black 1px 1px;
-    
-    }
- 
-    &_left{
-        width:46px;
-        height: 79px; 
-        cursor: pointer; 
-        position: relative;
-        left: 6%;
-        color:white;
     }
 
-    &_right{
-        width:46px;
-        height: 79px; 
+    &_left {
+        width: 2.875rem;
+        height: 4.9375rem;
         cursor: pointer;
         position: relative;
-        right: 6%; 
+        left: 10%;
+        color: white;
+
+        @media (min-width: 374.99px) and (max-width :768px) {
+            width: 1.4375rem;
+            height: 1.4375rem;
+            left: 14%;
+
+        }
     }
+
+    &_right {
+        width: 2.875rem;
+        height: 4.9375rem;
+        cursor: pointer;
+        position: relative;
+        right: 10%;
+
+        @media (min-width: 374.99px) and (max-width :768px) {
+            width: 1.4375rem;
+            height: 1.4375rem;
+            right: 26%;
+
+        }
+    }
+
     @keyframes monSlide {
         0% {
             left: 0px;
         }
+
         100% {
             left: -1800px;
-        }
-    }
-}
-/**************** Responsive ****************/
-@media screen and (max-width: 768px) {
-    .slider {
-        &__picture {
-            height: 30vh;
-            border-radius: 10px;
-            min-width: 320px;
-        }
-
-        &__number {
-            display: none;
-        }
-
-    /*     .chevron {
-            @include wh(20px, 30px);
-        } */
-
-        .left {
-            left: 10px;
-        }
-
-        .right {
-            right: 10px;
         }
     }
 }

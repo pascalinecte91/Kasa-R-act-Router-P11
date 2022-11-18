@@ -11,6 +11,7 @@ const Router = () => {
     return (
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/Kasa-React-Router-P11" element={<Home />} />
                 <Route path="/About" element={<About />} />
                 <Route path="/FicheLocation/:id" element={<FicheLocation/>} />
                 <Route path="/404" element={<NotFoundPage />} />

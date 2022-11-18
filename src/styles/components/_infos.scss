@@ -1,0 +1,35 @@
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 4.375rem;
+    margin-right: 4.4rem;
+
+    &_left {
+        font-size: 36px;
+        color: $color-1;
+    &--town{
+        font-size: 18px;
+    }
+    }
+    .info_right {
+        display: flex;
+        align-items: center;
+        margin-right: 5px;
+    &--picture{
+        border-radius: 50%;
+    }
+
+    &--name {
+        padding-right: 10px;
+        color: $color-1;
+        font-size: 18px;
+        font-weight: 500;
+
+     
+    }
+    }
+    
+}
+
+

@@ -1,0 +1,32 @@
+.tags {
+    display: flex;
+    padding: 1.25rem 4.6875rem;
+    white-space: nowrap;
+    border-radius: 0.625rem;
+    text-align: center;
+
+    span {
+        font-size: 0.875rem;
+        padding: 0.313rem 1.563rem 0.313rem 1.563rem;
+        margin-right: 0.625rem;
+        border-radius: 0.625rem;
+        color: white;
+        font-size: 0.875rem;
+        background-color: $color-1;
+    }
+}
+
+.references {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    width: calc(100% - 4.375rem);
+    align-items: center;
+
+img {
+    gap:5px;
+    width: 1.875rem;
+    height: 1.875rem;
+}
+}
+

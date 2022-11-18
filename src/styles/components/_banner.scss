@@ -6,21 +6,30 @@
     align-items: center;
     flex-shrink: 0;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 1.25rem;
 
     &_text {
         position: absolute;
-        font-size: 30px;
+        font-size: 1.875rem; 
         color: white;
         font-weight: bold;
+
+        @media (min-width: 374.99px) and (max-width :768px) {
+            font-size: 0.875rem;
+        } 
     }
 
     &_image {
-        width: calc(100% - 200px);
-        margin-top: 10px;
+        width: calc(100% - 12.5rem);
+        margin-top: 0.625rem;
         object-fit: cover;
         -webkit-filter: brightness(20%);
         filter: brightness(90%);
-        border-radius: 20px;
+        border-radius: 1.25rem;
+
+        @media (min-width: 373.99px) and (max-width :1024px) {
+            width: 90%;
+        } 
+    
     }
 }

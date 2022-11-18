@@ -3,7 +3,6 @@ import React from "react";
 import Loader from "components/Loader";
 import homeBanner from "assets/aboutBanner.jpg";
 import Banner from "components/Banner";
-import Collapse from "components/Collapse";
 
 const About = () => {
     const reglement = ["Fiabilité", "Respect", "Service", "Responsabilité"];

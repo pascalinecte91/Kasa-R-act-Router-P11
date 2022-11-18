@@ -2,9 +2,7 @@ import React from "react";
 
 import "styles/index.scss";
 
-
 const Banner = ({ bannerHome, text }) => {
-
     return (
         <div className="banner">
             <img className="banner_image" src={bannerHome}></img>
@@ -14,4 +12,3 @@ const Banner = ({ bannerHome, text }) => {
 };
 
 export default Banner;
-
