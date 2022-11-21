@@ -3,6 +3,7 @@ import React from "react";
 import Loader from "components/Loader";
 import homeBanner from "assets/aboutBanner.jpg";
 import Banner from "components/Banner";
+import Dropdown from "components/Dropdown";
 
 const About = () => {
     const reglement = ["Fiabilité", "Respect", "Service", "Responsabilité"];
@@ -13,13 +14,20 @@ const About = () => {
         "Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.",
         "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.",
     ];
+
     return (
         <>
             <Banner bannerHome={homeBanner} text="" />
+
             <Loader />
-            {/*     <h2>A propos</h2> */}
+            <section className="about__page ">
+                
+                {reglement.map((title, value) => (
+                <Dropdown key={`${title}-${value}`} title={title} value={content[value]} />
+                ))}
+   
+            </section>
         </>
     );
 };
-
 export default About;

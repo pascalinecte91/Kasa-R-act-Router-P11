@@ -13,13 +13,13 @@ const Dropdown = ({ title, value }) => {
 
     return (
         <article className={"dropdown" + (isOpen ? " active" : "")}>
-            <div className="dropdown_header" onClick={() => setIsOpen(!isOpen)}>
+            <div className="dropdown__header dropdown__header--aboutH" onClick={() => setIsOpen(!isOpen)}>
             <h4>{title}</h4>
-            <img className="dropdown_chevron" src={arrowDropdown} alt="" />
+            <img className="dropdown__chevron dropdown__chevron" src={arrowDropdown} alt="" />
             </div>
-            {isOpen && <p className="dropdown_content">{value}</p>}
+            {isOpen && <p className="dropdown__content dropdown__content--aboutCo">{value}</p>}
         </article>
     );
 };
 
-export default Dropdown;
+export default Dropdown; 

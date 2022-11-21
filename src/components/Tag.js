@@ -1,3 +1,4 @@
+
 import FicheLocation from "pages/FicheLocation/FicheLocation";
 import "styles/index.scss";
 import React from "react";

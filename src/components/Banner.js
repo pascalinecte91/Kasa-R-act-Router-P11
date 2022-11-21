@@ -5,8 +5,8 @@ import "styles/index.scss";
 const Banner = ({ bannerHome, text }) => {
     return (
         <div className="banner">
-            <img className="banner_image" src={bannerHome}></img>
-            <div className="banner_text">{text}</div>
+            <img className="banner__image" src={bannerHome}></img>
+            <div className="banner__text">{text}</div>
         </div>
     );
 };

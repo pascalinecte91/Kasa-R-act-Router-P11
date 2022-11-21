@@ -8,7 +8,7 @@ const Rating = ({ rating }) => {
     const rateStars = [1, 2, 3, 4, 5];
  
     return (
-        <div className="references_stars">
+        <div className="references__stars">
             {rateStars.map((ref, i) =>
                 ref <= rating 
                 ? (

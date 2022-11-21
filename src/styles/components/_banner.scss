@@ -8,7 +8,7 @@
     background-color: white;
     border-radius: 1.25rem;
 
-    &_text {
+    &__text {
         position: absolute;
         font-size: 1.875rem; 
         color: white;
@@ -19,7 +19,7 @@
         } 
     }
 
-    &_image {
+    &__image {
         width: calc(100% - 12.5rem);
         margin-top: 0.625rem;
         object-fit: cover;

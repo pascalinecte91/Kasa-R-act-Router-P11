@@ -2,10 +2,9 @@
     display: flex;
     align-items: center;
     position: relative;
-    margin-bottom: 1.875rem;
     mix-blend-mode: normal;
 
-    &_picture {
+    &__picture {
         width: calc(100% - 9.25rem);
         height: 25.9375rem;
         -o-object-fit: cover;
@@ -25,7 +24,7 @@
         }
     }
 
-    &_number {
+    &__number {
         position: absolute;
         bottom: 1.875rem;
         left: 50%;
@@ -35,7 +34,7 @@
         text-shadow: black 1px 1px;
     }
 
-    &_left {
+    &__left {
         width: 2.875rem;
         height: 4.9375rem;
         cursor: pointer;
@@ -51,7 +50,7 @@
         }
     }
 
-    &_right {
+    &__right {
         width: 2.875rem;
         height: 4.9375rem;
         cursor: pointer;
