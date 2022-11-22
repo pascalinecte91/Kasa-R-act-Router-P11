@@ -14,19 +14,23 @@ const FicheLocation = () => {
     const { id } = useParams();
     const ficheLocation = data.find((ficheLocation) => ficheLocation.id === id);
 
-    const { title, pictures, description, host, rating, location, equipments, tags} = ficheLocation;
-   
+    const {title, pictures, description, host, rating, location, equipments, tags} = ficheLocation;
+
     return (
         <>
             <Slider pictures={pictures} title={title} />
-            <article class="info">
-                <aside class="info__left">
+            <article className="info">
+                <aside className="info__left">
                     <p className="info__lelft--title">{title}</p>
                     <p className="info__left--town">{location}</p>
                 </aside>
-                <aside class="info__right">
+                <aside className="info__right">
                     <p className="info__right--name">{host.name}</p>
-                    <img className="info__right--picture" src={host.picture} alt="photo du loueur"/>
+                    <img
+                        className="info__right--picture"
+                        src={host.picture}
+                        alt="photo du loueur"
+                    />
                 </aside>
             </article>
             <div className="references">

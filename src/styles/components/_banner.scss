@@ -21,11 +21,11 @@
 
     &__image {
         width: calc(100% - 12.5rem);
-        margin-top: 0.625rem;
         object-fit: cover;
         -webkit-filter: brightness(20%);
         filter: brightness(90%);
         border-radius: 1.25rem;
+        margin-bottom: 10px;
 
         @media (min-width: 373.99px) and (max-width :1024px) {
             width: 90%;
