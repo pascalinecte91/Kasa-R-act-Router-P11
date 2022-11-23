@@ -6,7 +6,6 @@ import NotFoundPage from 'pages/Error/NotFoundPage';
 import Home from 'pages/Home/Home';
 
 
-
 const Router = () => {
     return (
             <Routes>

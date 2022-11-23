@@ -1,32 +1,28 @@
 .gallery {
-    width: 90%;
+    width: calc(100% - 12rem);
     margin: auto;
-    display: flex;
+    @include flex-center;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    flex: 1 0 auto;
-    gap: 3.125rem;
-    padding: 3.125rem;
-    margin-top: 2.5rem;
+    gap: 50px;
+    padding: 33px 0px 10px 0px;
+    margin-top: 1.5rem;
     margin-bottom: 2.5rem;
-    background-color: #f6f6f6;
     border-radius: 20px;
-
-    @media (min-width: 1024px) and (max-width :1440px) {
-        width: 87%;
-    } 
-
-    @media (min-width: 768px) and (max-width  : 1023.99px) {
-        width: 89%;
-        gap: 1.25rem;
-    } 
-
-    @media (min-width: 424.99px) and (max-width: 767.99px) {
-        width: 90%;
+    @media screen and (max-width: 425px) {
+        margin-top: 0px;
+    }
+    @media screen and (min-width: 768px) {
+        background-color: #f6f6f6;
     }
 
-    @media (min-width: 424.99px) and (max-width: 767.99px) {
-        
+    @media screen and (max-width: 767.99px) {
+        .gallery {
+            gap: 7px;
+            background-color: none;
+        }
+    }
+    @media screen and (max-width: 1023.99px) {
+        gap: 20px;
     }
 }

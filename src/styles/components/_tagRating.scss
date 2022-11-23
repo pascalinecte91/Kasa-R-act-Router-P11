@@ -1,11 +1,14 @@
 .tags {
     display: flex;
-    padding: 1.25rem 4.6875rem;
     white-space: nowrap;
     border-radius: 0.625rem;
     text-align: center;
+    margin-bottom: 27px;
+    align-items: center;
 
     span {
+        display: flex;
+        align-items: center;
         font-size: 0.875rem;
         padding: 0.313rem 1.563rem 0.313rem 1.563rem;
         margin-right: 0.625rem;
@@ -13,19 +16,26 @@
         color: white;
         font-size: 0.875rem;
         background-color: $color-1;
+        height:25px;
+        @media screen and (max-width: 425px) {
+            height:14px;
+            font-size: 10px;
+            width: 84px;
+            justify-content: center;
+        }
+
+
+        @media (min-width: 601px) and (max-width: 768px) {
+            font-size: 12px;
+            padding: 5px;
+        }
     }
+    
+  
 }
 
 .references {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
-    width: calc(100% - 4.375rem);
-    align-items: center;
-
-img {
-    gap:5px;
-    width: 1.875rem;
-    height: 1.875rem;
-}
+    flex-direction: row-reverse;
+    padding-top: 15px;
 }

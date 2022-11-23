@@ -22,12 +22,15 @@ const Slider = ({ title, pictures }) => {
     };
 
     return (
-        <section className="slider">
-            {indexSlideMax > 1 ? (
-            <img src={arrowLeft} onClick={previous} className="slider__left" />) : 0} 
-            <img src={pictures[currentIndex]} className="slider__picture" alt={title} />
-    
-            {indexSlideMax > 1 ? (<img src={arrowRight} onClick={next}className="slider__right" />) : 0}
+        <section className="slider">{indexSlideMax > 1 
+            ? (
+            <img src={arrowLeft} onClick={previous} className="slider__left" />) 
+            : 0} 
+            <img src={pictures[currentIndex]} className="slider__picture" alt={title} />   
+            {indexSlideMax > 1 
+            ? (<img src={arrowRight} onClick={next}className="slider__right" />) 
+            : 0}
+            
           {/*   // mon state + 1 sur indexSlideMax */}
             <span className="slider__number">{" "}
                 {currentIndex + 1}/{indexSlideMax}

@@ -1,57 +1,82 @@
-.nav {
-    width: calc(100% - 11rem);
+header {
     @include flex-between;
-    align-items: flex-start;
-    margin: auto;
-    padding-bottom: 3.125rem;
-
-    &__logo {
-        margin-top: 15px;
+    margin: 15px 7px 8px 7px;
+    @media screen and (max-width: 425px) {
+       justify-content: space-around;
     }
 
     ul {
         @include flex-end;
-        margin: 1.875rem 2.5rem 0rem 0rem;
-        align-items: flex-end;
+        gap: 15px;
+        width: 100%;
+        padding: 0;
+    }
 
-        a {
-            text-decoration: none;
-            padding: 5px;
-            width: 7.5rem;
-
-            li {
-                @include flex-end;
-                font-size: 1.5rem;
-                width: 7.5rem;
-                font-weight: 500;
-                list-style: none;
-                color: $color-1;
-                transition: 0.2s;
-                cursor: pointer;
-
-
-                &:hover {
-                    color: $color-1;
-                }
-
-            }
-
-            .nav__home {
-                text-align: right;
-                margin-right: 10px;
-            }
-
-            .nav__about {
-                width: 9.125rem;
-            }
-
-        }
-
-        //*barre en dessous de la nav
-        .nav-active {
-        text-decoration: underline;
-        color: $color-1;
-
-        }
+    li {
+        list-style: none;
     }
 }
+
+.nav__logo {
+    width: 145px;
+}
+
+.nav__link {
+    width: 140px;
+}
+
+a:hover,
+a.active {
+    text-decoration: underline;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: right;
+    color: $color-1;
+}
+
+@media screen and (min-width: 480px) {
+    .nav__link {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+      
+        gap: 20px;
+        margin: 30px 100px 20px;
+        align-items: center;
+    }
+
+    .nav__logo {
+        width: auto;
+    }
+
+    .nav__link {
+        width: 300px;
+
+        ul {
+            gap: 60px;
+        }
+    }
+
+    a {
+        text-transform: none;
+        text-decoration: none;
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 2;
+    }
+ 
+    }

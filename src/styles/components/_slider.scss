@@ -2,26 +2,22 @@
     display: flex;
     align-items: center;
     position: relative;
-    mix-blend-mode: normal;
+    mix-blend-mode: normal;  //* melange de color
 
     &__picture {
-        width: calc(100% - 9.25rem);
-        height: 25.9375rem;
+        width: calc(100% - 200px);
+        margin: auto;
+        height: 25.9rem;
         -o-object-fit: cover;
         object-fit: cover;
         border-radius: 25px;
         margin: auto;
-        display: flex;
-        justify-content: center;
+        @include flex-center;
 
-        @media (min-width: 767.99px) and (max-width :1024px) {
-            width: calc(100% - 5.3125rem);
-            justify-content: space-around;
-        }
-
-        @media (min-width: 374.99px) and (max-width :768px) {
-            justify-content: space-around;
-        }
+        @media screen and (max-width: 425px) {
+           height:255px;
+           width:335px;
+    }
     }
 
     &__number {
@@ -36,33 +32,30 @@
 
     &__left {
         width: 2.875rem;
-        height: 4.9375rem;
+        height: 79px;
         cursor: pointer;
         position: relative;
         left: 10%;
         color: white;
+        display: flex; 
+        @media screen and (max-width: 425px) {
+        width: 17px;
+        height: 17px;
+}
 
-        @media (min-width: 374.99px) and (max-width :768px) {
-            width: 1.4375rem;
-            height: 1.4375rem;
-            left: 14%;
-
-        }
     }
-
     &__right {
         width: 2.875rem;
-        height: 4.9375rem;
+        height: 79px;
         cursor: pointer;
         position: relative;
         right: 10%;
-
-        @media (min-width: 374.99px) and (max-width :768px) {
-            width: 1.4375rem;
-            height: 1.4375rem;
-            right: 26%;
-
-        }
+        display: flex;
+        @media screen and (max-width: 425px) {
+            width: 17px;
+            height: 17px;
+    }
+    
     }
 
     @keyframes monSlide {

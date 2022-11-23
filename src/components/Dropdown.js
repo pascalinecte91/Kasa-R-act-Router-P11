@@ -7,27 +7,31 @@ import arrowDropdown from "assets/arrowDropdown.svg";
  */
 
 const Dropdown = ({ title, value }) => {
-    const [isOpen, setIsOpen] = useState(false);
-    const dropdownToggle = () => {
-        setIsOpen(!isOpen);
-    };
+	const [isOpen, setIsOpen] = useState(false);
+	const dropdownToggle = () => {
+		setIsOpen(!isOpen);
+	};
 
-    return (
-        <article className={"dropdown" + (isOpen ? " active" : "")}>
-            <div className="dropdown__header dropdown__header--aboutH" onClick={() => setIsOpen(!isOpen)}>
-                <h4>{title}</h4>
-                <img className="dropdown__chevron " src={arrowDropdown} alt=""/>
-            </div>
-            <div className="dropdown__content--li">
-            {isOpen && (typeof value === "string" 
-                ? (<p>{value}</p> ) 
-                : (<ul>{value.map((text, index) => (<li key={index}>{text}</li>
-                ))}
-                </ul> ))} 
-            </div>
-        </article>
-    );
+	return (
+		<article className={"dropdown" + (isOpen 
+		? " active" 
+		: "")}>
+			<div className="dropdown__header" onClick={() => setIsOpen(!isOpen)}>
+					<h4 className="dropdown__title">{title}</h4>
+							<img className="dropdown__chevron " src={arrowDropdown} alt="" />
+			</div>
+					<div className="dropdown__content">
+							{isOpen && (typeof value === "string" 
+							? ( <p className="dropdown__content--value">{value}</p>) 
+							: ( <ul className="dropdown__content--ul">
+									{value.map((text, index) => (
+											<li key={index} className="dropdown__content--li">{text}</li>
+								))}
+									</ul>
+							))}
+					</div>
+		</article>
+	);
 };
-
 
 export default Dropdown;

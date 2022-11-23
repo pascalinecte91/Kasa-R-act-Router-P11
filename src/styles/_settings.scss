@@ -1,12 +1,29 @@
-
-body {
-    box-sizing: border-box;
- }
 $color-1: #FF6060;
 $color-2: #e3e3e3;
 
-/*  10 12 14 16 18 20 
-$font-size: 0.625rem 0.75rem 0.875rem 1rem 1.125rem 1.25rem;  */
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; //** footer en bas
+}
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; //** footer en bas
+}
+
+* {
+    box-sizing: border-box;
+}
+
 
 //** @mixin  FLEXBOX
 
@@ -33,11 +50,4 @@ $font-size: 0.625rem 0.75rem 0.875rem 1rem 1.125rem 1.25rem;  */
 @mixin flex-column {
     display: flex;
     flex-direction: column;
-}
-
-//******  WIDTH  &  HEIGHT
-
-@mixin wh($width, $height) {
-    width: $width;
-    height: $height;
 }

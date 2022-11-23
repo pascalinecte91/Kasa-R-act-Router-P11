@@ -1,35 +1,42 @@
 .footer {
-    @include flex-column;
-    align-items: center;
-    bottom: 0;
-    width: 100%;
+    width: 100vw;
     background-color: black;
-    padding: 3.125rem;
-    margin-top: 1.875rem;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 2.25rem;
+    position: relative;
+    bottom: 0;
+    z-index: 50;
+    @media screen and (max-width: 425px) {
+        margin-top: inherit;
+    }
 
-    &__agree {
-        display: flex;
-        text-align: center;
-        color: white;
-        font-size: 1.5rem;
-        font-weight: 500;
+
+    @media screen and (min-width: 767.99px) {
+        padding: 63px 0 30px;
     }
 
     &__logo {
-        width: 7.625rem;
-        margin-bottom: 3.125rem;
-    }
-}
-
-//!********* RESPONSIVE **********
-@media screen and (max-width: 768px) {
-    .footer {
-        &__agree {
-            font-size: 12px;
+        width: 7.6rem;
+        filter: saturate(0%) brightness(0%) invert(100%);
+        @media screen and (min-width: 350px) and (max-width: 425.99px) {
+            padding-top: 20px;
         }
 
-        &__logo {
-            margin-bottom: 1.875rem;
+    }
+
+    &__agree {
+        font-weight: 500;
+        font-size: 12px;
+        padding-top: 30px;
+        margin: 0;
+        @media screen and (max-width: 425px) {
+            padding-bottom: 30px;
+            padding-top: 15px;
+        }
+
+        @media screen and (min-width: 767.99px) {
+            font-size: 24px;
         }
     }
 }

@@ -1,21 +1,30 @@
-.about__page {
-    align-items: center;
-    width: calc(100% - 359px);
-    gap: 30px;
-    margin: auto;
-    font-size: 24px;
-    font-weight: 500;
+.about {
+    width: calc(100% - 400px);
+    margin: 10px auto 7px auto;
 
-    .dropdown__header {
-        height: 47px;
-        margin-top: 10px;
+    @media (min-width: 350px) and (max-width: 600.99px) {
+        width: 95%;
     }
-
-    .dropdown__content {
-        font-size: 24px;
+    @media (min-width: 601px) and (max-width: 768px) {
+        width: 74%;
     }
 
     .dropdown {
-        margin: 10px;
+        margin-bottom: 20px;
+
+        &__content {
+            font-size: 18px;
+            position: relative;
+        }
+        &__header {
+            @media (min-width: 350px) and (max-width: 600.99px) {
+            height:30px;
+            border-radius: 5px;
+            font-size: 12px;
+            h4 {
+                font-size: 13px;
+            }
+        }
+    }
     }
 }
