@@ -7,22 +7,23 @@
     position: relative;
     bottom: 0;
     z-index: 50;
-    @media screen and (max-width: 425px) {
+    padding: 15px;
+
+    @include max425 {
         margin-top: inherit;
     }
 
-
-    @media screen and (min-width: 767.99px) {
+    @include min768 {
         padding: 63px 0 30px;
     }
 
     &__logo {
         width: 7.6rem;
         filter: saturate(0%) brightness(0%) invert(100%);
-        @media screen and (min-width: 350px) and (max-width: 425.99px) {
+
+        @media screen and (min-width: 350px) and (max-width: 539.99px) {
             padding-top: 20px;
         }
-
     }
 
     &__agree {
@@ -30,12 +31,13 @@
         font-size: 12px;
         padding-top: 30px;
         margin: 0;
-        @media screen and (max-width: 425px) {
+
+        @include max425 {
             padding-bottom: 30px;
             padding-top: 15px;
         }
 
-        @media screen and (min-width: 767.99px) {
+        @include min768 {
             font-size: 24px;
         }
     }

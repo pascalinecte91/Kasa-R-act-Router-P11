@@ -11,12 +11,12 @@
         object-fit: cover;
     }
 
-    @media (min-width: 767.99px) and (max-width :1024px) {
+    @include tabDesc{
         width: 14.25rem;
         height: 14.25rem;
     }
 
-    @media (min-width: 350px) and (max-width :767px) {
+    @include minAndMax {
         max-width: 25rem;
         max-height: 15rem;
     }

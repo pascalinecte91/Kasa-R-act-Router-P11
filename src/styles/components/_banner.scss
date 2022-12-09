@@ -1,10 +1,8 @@
 .banner {
     position: relative;
-    @include flex-center;
+    @include fjcc;
     align-items: center;
-    flex-shrink: 0;
     border-radius: 1.25rem;
-
 
     &__text {
         position: absolute;
@@ -12,10 +10,14 @@
         color: white;
         font-weight: 500;
 
-        @media (max-width: 763.99px){
+        @include max768 {
             font-size: 24px;
-            width: 225px;
+            width: 14.063rem;
             margin-top: 20px;
+            left: 16%
+        }
+        @include smartphone {
+            margin-top: inherit;
             left: 8%
         }
     }
@@ -29,12 +31,15 @@
         border-radius: 25px;
         margin-bottom: 31px;
 
-        @media (min-width: 350px) and (max-width: 539.99px) {
-            width: 93%;
-            height: 223px;
+        @include smartphone {
+            width: 95%;
+            height: 6.938rem;
             object-position: bottom 2px right -7px;
-            margin: 0px 5px;
             border-radius: 10px;
+            margin-bottom: inherit;
+        }
+        &--about {
+            height: 225px;
         }
     }
 }

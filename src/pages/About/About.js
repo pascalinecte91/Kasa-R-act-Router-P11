@@ -11,11 +11,11 @@ const About = () => {
 
 	return (
 		<>
-			<Banner bannerHome={homeBanner} text="" />
+			<Banner bannerHome={homeBanner} modifier="about" text="" />
 
 			<section className="about">
 				{about.map((a) => (
-					<Dropdown key={`${a.id}`} className="about__page" title={a.title} value={[a.content]} />
+					<Dropdown key={`${a.id}`} title={a.title} value={[a.content]} />
 				))}
 			</section>
 		</>

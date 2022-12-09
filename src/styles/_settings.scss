@@ -27,27 +27,85 @@ main {
 
 //** @mixin  FLEXBOX
 
-@mixin flex-between {
+@mixin fjcsb {
     display: flex;
     justify-content: space-between;
 }
 
-@mixin flex-end {
+@mixin fje {
     display: flex;
     justify-content: flex-end;
 }
 
-@mixin flex-start {
+@mixin fst {
     display: flex;
     justify-content: flex-start;
 }
 
-@mixin flex-center {
+@mixin fjcc {
     display: flex;
     justify-content: center;
 }
 
-@mixin flex-column {
+@mixin fr {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin fc {
     display: flex;
     flex-direction: column;
+}
+
+//*******  MIXINS  RESPONSIVE
+
+@mixin smartphone {
+    @media (min-width: 320px) and (max-width: 539.99px) {
+        @content;
+    }
+}
+
+@mixin smartTab {
+    @media (min-width: 350px) and (max-width: 600.99px) {
+        @content;
+    }
+
+}
+
+@mixin minAndMax {
+    @media (min-width: 320px) and (max-width :767.99px){
+        @content;
+    }
+}
+@mixin min768 {
+    @media (min-width: 767.99) {
+        @content;
+    }
+}
+@mixin min425 {
+    @media (min-width: 425.99) {
+        @content;
+    }
+}
+
+@mixin tabDesc {
+    @media (min-width: 768px) and (max-width :1024.99px){
+        @content;
+    }
+}
+
+@mixin max425 {
+    @media screen and (max-width: 425px){
+        @content;
+    }
+}
+@mixin max768 {
+    @media screen and (max-width: 767.99px){
+        @content;
+    }
+}
+@mixin max1024 {
+    @media screen and (max-width: 1023.99px){
+        @content;
+    }
 }

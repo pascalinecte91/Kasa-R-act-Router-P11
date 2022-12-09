@@ -24,34 +24,27 @@ const FicheLocation = () => {
 		<>
 			<Slider pictures={pictures} title={title} />
 
-			<section className="side">
-				<aside className="side__left">
-					<p className="side__title side__title--first">{title}</p>
-					<p className="side__title side__title--town">{location}</p>
-
-					<div className="side__content side__content--tags">
-						<Tag tags={tags} />
+			<section className="location">
+					<div className="location__content">
+						<p className="location__title">{title}</p>
+						<p className="location__location">{location}</p>
+						<div className="location__tags">
+							<Tag tags={tags} />
+						</div>
 					</div>
-					<div className="side__description">
-						<Dropdown value={description} className="side__description--info" title="Description" />
-					</div>
-				</aside>
-
-				<aside className="side__right">
-					<div className="side__smart">
-					<div className="side__detail">
-						<p className="side__detail side__detail--name">{host.name}</p>
-						<img className="side__detail side__detail--picture" src={host.picture} alt="photo de profil" />
-					</div>
-					<div className="side__stars">
+					<div className="location__profil">
+						<div className="location__host">
+							<h3>{host.name}</h3>
+							<img src={host.picture} alt={host.name} />
+						</div>
 						<Rating rating={rating} />
 					</div>
+				</section>
+				<div className="location__info">
+				<Dropdown value={description} modifier="ficheLocation" title="Description" />
+				<Dropdown value={equipments} modifier="ficheLocation" title="Equipements" />
 					</div>
-					<div className="side__equipments side__equipments--right ">
-						<Dropdown value={equipments} title="Equipements" />
-					</div>
-				</aside>
-			</section>
+			
 		</>
 	);
 };

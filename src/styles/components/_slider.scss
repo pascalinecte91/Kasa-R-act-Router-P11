@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    mix-blend-mode: normal;  //* melange de color
+    mix-blend-mode: normal; //* melange de color
 
     &__picture {
         width: calc(100% - 200px);
@@ -12,12 +12,11 @@
         object-fit: cover;
         border-radius: 25px;
         margin: auto;
-        @include flex-center;
-
-        @media screen and (max-width: 425px) {
-           height:255px;
-           width:335px;
-    }
+        @include fjcc;
+        @include max768 {
+            width: 95%;
+            height: 255px;
+        }
     }
 
     &__number {
@@ -37,13 +36,19 @@
         position: relative;
         left: 10%;
         color: white;
-        display: flex; 
-        @media screen and (max-width: 425px) {
-        width: 17px;
-        height: 17px;
-}
+        display: flex;
 
+        @include tabDesc { 
+            height: 40px;
+            left: 18%;
+        }
+        @include max768 {
+            height: 19px;
+            width: 11px;
+        }
     }
+    
+
     &__right {
         width: 2.875rem;
         height: 79px;
@@ -51,11 +56,14 @@
         position: relative;
         right: 10%;
         display: flex;
-        @media screen and (max-width: 425px) {
-            width: 17px;
-            height: 17px;
-    }
-    
+        @include tabDesc {
+            height: 40px;
+            right: 18%;
+        }
+        @include max768 {
+            height: 19px;
+            width: 11px;
+        }
     }
 
     @keyframes monSlide {

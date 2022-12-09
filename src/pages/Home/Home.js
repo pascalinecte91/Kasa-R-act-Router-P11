@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <>
             <main>
-                <Banner bannerHome={homeBanner} text=" Chez vous, Partout et Ailleurs "/>
+                <Banner bannerHome={homeBanner} modifier="home" text=" Chez vous, Partout et Ailleurs "/>
                 <Gallery />
             </main>
         </>

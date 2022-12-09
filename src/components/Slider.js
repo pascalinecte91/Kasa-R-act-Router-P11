@@ -25,11 +25,11 @@ const Slider = ({ title, pictures }) => {
         <section className="slider">{indexSlideMax > 1 
             ? (
             <img src={arrowLeft} onClick={previous} className="slider__left" />) 
-            : 0} 
+            : null} 
             <img src={pictures[currentIndex]} className="slider__picture" alt={title} />   
             {indexSlideMax > 1 
             ? (<img src={arrowRight} onClick={next}className="slider__right" />) 
-            : 0}
+            : null}
             
           {/*   // mon state + 1 sur indexSlideMax */}
             <span className="slider__number">{" "}
