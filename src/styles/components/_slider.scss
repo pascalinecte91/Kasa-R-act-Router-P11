@@ -13,9 +13,10 @@
         border-radius: 25px;
         margin: auto;
         @include fjcc;
+
         @include max768 {
-            width: 95%;
-            height: 255px;
+            width: 93%;
+            height: 15.938rem;
         }
     }
 
@@ -38,28 +39,31 @@
         color: white;
         display: flex;
 
-        @include tabDesc { 
+        @include tabDesc {
             height: 40px;
             left: 18%;
         }
+
         @include max768 {
             height: 19px;
             width: 11px;
         }
     }
-    
+
 
     &__right {
         width: 2.875rem;
-        height: 79px;
+        height: 4.938rem;
         cursor: pointer;
         position: relative;
         right: 10%;
         display: flex;
+
         @include tabDesc {
-            height: 40px;
+            height: 2.5rem;
             right: 18%;
         }
+
         @include max768 {
             height: 19px;
             width: 11px;

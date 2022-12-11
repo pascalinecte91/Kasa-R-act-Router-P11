@@ -14,6 +14,7 @@ body {
     flex-direction: column;
     height: 100vh; //** footer en bas
 }
+
 main {
     display: flex;
     flex-direction: column;
@@ -73,15 +74,17 @@ main {
 }
 
 @mixin minAndMax {
-    @media (min-width: 320px) and (max-width :767.99px){
+    @media (min-width: 320px) and (max-width :767.99px) {
         @content;
     }
 }
+
 @mixin min768 {
     @media (min-width: 767.99) {
         @content;
     }
 }
+
 @mixin min425 {
     @media (min-width: 425.99) {
         @content;
@@ -89,23 +92,31 @@ main {
 }
 
 @mixin tabDesc {
-    @media (min-width: 768px) and (max-width :1024.99px){
+    @media (min-width: 768px) and (max-width :1023.99px) {
         @content;
     }
 }
 
 @mixin max425 {
-    @media screen and (max-width: 425px){
+    @media screen and (max-width: 425px) {
         @content;
     }
 }
+
 @mixin max768 {
-    @media screen and (max-width: 767.99px){
+    @media screen and (max-width: 767.99px) {
         @content;
     }
 }
-@mixin max1024 {
-    @media screen and (max-width: 1023.99px){
+
+@mixin min1024 {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin min1440 {
+    @media screen and (min-width: 1439.99px) {
         @content;
     }
 }

@@ -1,6 +1,6 @@
 .dropdown {
     @include fc;
-    justify-content: space-between;
+
     width: 100%;
 
     &__toggle {
@@ -15,6 +15,7 @@
         font-size: 18px;
         font-weight: 400;
         padding: 10px;
+
         @include max425 {
             font-size: 13px;
         }
@@ -31,9 +32,10 @@
     }
 
     &__chevron {
-        width: 43px;
+        width: 2.688rem;
         color: #ffffff;
         padding: 10px;
+
         @include minAndMax {
             width: 32px;
         }
@@ -50,14 +52,16 @@
         cursor: pointer;
         width: 100%;
         color: #ffffff;
+
         @include minAndMax {
             height: 2rem;
             border-radius: 5px;
         }
     }
+
     &__content {
         &--li {
-            font-size: 24px;
+            font-size: 16px;
             font-weight: 400;
             background: #f7f7f7;
             border-radius: 5px;
@@ -73,10 +77,15 @@
             @include tabDesc {
                 font-size: 16px;
             }
+
+            @include min1024 {
+                font-size: 18px;
+            }
         }
 
         &--ul {
             padding-left: 0px;
+            padding-top: 9px;
         }
     }
 
@@ -92,7 +101,6 @@
 /* .dropdown {
     &__image {
         &--home {}
-
         &--about {}
     }
 } */

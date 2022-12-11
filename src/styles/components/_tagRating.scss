@@ -5,6 +5,7 @@
     text-align: center;
     margin-bottom: 27px;
     align-items: center;
+    flex-wrap: wrap;
 
     @include max425 {
         margin-bottom: 0px;
@@ -21,6 +22,7 @@
         font-size: 0.875rem;
         background-color: $color-1;
         height: 25px;
+        margin-bottom: 5px;
 
         @include max768 {
             height: 18px;

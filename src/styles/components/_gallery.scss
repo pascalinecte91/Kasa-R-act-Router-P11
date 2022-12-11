@@ -4,14 +4,17 @@
     @include fjcc;
     flex-wrap: wrap;
     align-items: center;
-    gap: 50px;
+    gap: 3.125rem;
     padding: 33px 0px 10px 0px;
     margin-top: 1.5rem;
     margin-bottom: 2.5rem;
     border-radius: 20px;
+    background-color: #F6F6F6;
 
     @include max425 {
         padding: inherit;
+        background-color: transparent;
+        gap: 20px;
     }
 
     @include min768 {
@@ -25,7 +28,7 @@
         }
     }
 
-    @include max1024 {
+    @include min1024{
         gap: 20px;
     }
 }

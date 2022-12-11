@@ -22,8 +22,8 @@ const Dropdown = ({ title, value }) => {
 			</div>
 					<div className="dropdown__content">
 							{isOpen && (typeof value === "string" 
-							? ( <p className="dropdown__content--value">{value}</p>) 
-							: ( <ul className="dropdown__content--ul">
+							? (<p className="dropdown__content--value">{value}</p>) 
+							: (<ul className="dropdown__content--ul">
 									{value.map((text, index) => (
 											<li key={index} className="dropdown__content--li">{text}</li>
 								))}

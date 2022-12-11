@@ -14,7 +14,7 @@
     }
 
     @include min768 {
-        padding: 63px 0 30px;
+        padding: 3.938rem 0 1.875rem;
     }
 
     &__logo {
@@ -28,7 +28,7 @@
 
     &__agree {
         font-weight: 500;
-        font-size: 12px;
+        font-size: 24px;
         padding-top: 30px;
         margin: 0;
 
@@ -37,8 +37,8 @@
             padding-top: 15px;
         }
 
-        @include min768 {
-            font-size: 24px;
+        @include minAndMax {
+            font-size: 12px;
         }
     }
 }

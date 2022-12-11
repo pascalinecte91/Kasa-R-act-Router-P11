@@ -1,6 +1,7 @@
 .about {
     width: calc(100% - 400px);
     margin: 10px auto 7px auto;
+
     @include minAndMax {
         width: 95%;
     }
