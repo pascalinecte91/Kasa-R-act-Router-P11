@@ -33,7 +33,7 @@
 		margin: 15px 0 0px;
 
 		@include tabDesc {
-			font-size: 26px;
+			font-size: 23px;
 			margin: 20px 0 5px;
 		}
 
@@ -152,7 +152,7 @@
 			justify-content: space-between;
 		}
 
-		.dropdown__content--value {
+		.dropdown__content__value {
 			color: $color-1;
 			font-size: 16px;
 
@@ -162,7 +162,7 @@
 		}
 
 		@include max425 {
-			.dropdown__content--value {
+			.dropdown__content__value {
 				font-size: 12px;
 				margin: 10px;
 				gap: 20px;
