@@ -155,6 +155,7 @@
 		.dropdown__content__value {
 			color: $color-1;
 			font-size: 16px;
+			padding-left: 8px;
 
 			@include min1024 {
 				font-size: 18px;
@@ -164,7 +165,6 @@
 		@include max425 {
 			.dropdown__content__value {
 				font-size: 12px;
-				margin: 10px;
 				gap: 20px;
 			}
 		}

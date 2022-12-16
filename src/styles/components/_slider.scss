@@ -18,6 +18,9 @@
             width: 93%;
             height: 15.938rem;
         }
+        @include smartphone {
+            border-radius: 10px;
+        }
     }
 
     &__number {

@@ -6,7 +6,7 @@ import "styles/index.scss";
 const Header = () => {
     return (
         <header className="header">
-            <NavLink to={"/Kasa-React-Router-P11"}>
+            <NavLink to={"/"}>
                 <img className="nav__logo" src={logo_kasa} alt="Kasa Logo" />
             </NavLink>
             <div className="nav__link">
@@ -14,12 +14,12 @@ const Header = () => {
                     <li>
                         <NavLink className={({ isActive }) =>isActive 
                         ? "active" 
-                        : null}to="/Kasa-React-Router-P11">Accueil
+                        : null}to="/">Accueil
                         </NavLink>
                     </li>
                     <li><NavLink className={({ isActive }) =>isActive 
                     ? "active" 
-                    : null}to="/Kasa-React-Router-P11/about">A Propos
+                    : null}to="/about">A Propos
                         </NavLink>
                     </li>
                 </ul>
