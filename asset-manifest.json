@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Kasa-React-Router-P11/static/css/main.d831ef3b.css",
-    "main.js": "/Kasa-React-Router-P11/static/js/main.bfe76edb.js",
+    "main.js": "/Kasa-React-Router-P11/static/js/main.c845b5b8.js",
     "static/media/aboutBanner.jpg": "/Kasa-React-Router-P11/static/media/aboutBanner.e8cc81c1db153c8dac8c.jpg",
     "static/media/homeBanner.jpg": "/Kasa-React-Router-P11/static/media/homeBanner.179d25c559cef3a48996.jpg",
     "index.html": "/Kasa-React-Router-P11/index.html",
@@ -9,10 +9,10 @@
     "static/media/arrowRight.svg": "/Kasa-React-Router-P11/static/media/arrowRight.f5d8c79f97e83ab55764c74a494ece58.svg",
     "static/media/arrowLeft.svg": "/Kasa-React-Router-P11/static/media/arrowLeft.e1c831f025531aaa34d3eb308a748ce2.svg",
     "main.d831ef3b.css.map": "/Kasa-React-Router-P11/static/css/main.d831ef3b.css.map",
-    "main.bfe76edb.js.map": "/Kasa-React-Router-P11/static/js/main.bfe76edb.js.map"
+    "main.c845b5b8.js.map": "/Kasa-React-Router-P11/static/js/main.c845b5b8.js.map"
   },
   "entrypoints": [
     "static/css/main.d831ef3b.css",
-    "static/js/main.bfe76edb.js"
+    "static/js/main.c845b5b8.js"
   ]
 }
