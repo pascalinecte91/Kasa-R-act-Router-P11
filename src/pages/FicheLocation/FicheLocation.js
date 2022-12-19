@@ -23,6 +23,7 @@ const FicheLocation = () => {
 	return (
 		<>
 			<Slider pictures={pictures} title={title} />
+			{/*  props du composant */}
 
 			<section className="location">
 					<div className="location__content">
